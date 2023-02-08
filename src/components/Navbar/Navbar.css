@@ -24,6 +24,10 @@
 #navbar > ul > li{
     list-style: none;
     cursor: pointer;
+    transition: 0.3s linear;
+}
+#navbar > ul > li:hover{
+    color: #c4c4c4;
 }
 
 .drawerMaterialUI{
