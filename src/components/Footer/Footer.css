@@ -1,0 +1,90 @@
+#mainFooter{
+    background-color: #121921;
+
+}
+
+#footer{
+    width: 90%;
+    padding: 20px;
+    margin: auto;
+    display: grid;
+    color: white;
+    text-align: left;
+    justify-content: center;
+    grid-template-columns: repeat(4,1fr);
+}
+
+#footer > div > ul >li{
+    list-style: none;
+    text-align: left;
+}
+
+#footer > div{
+    width: 80%;
+}
+
+#footer > div > h2{
+    border: 1px solid white;
+}
+
+#footer > div > p{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#footer >div> div > img{
+    width: 40px;
+    height: 40px;
+    transition: 0.5s linear;
+    margin: 3px;
+}
+#footer >div> div > img:hover{
+    transform: scale(1.1);
+}
+
+#footer > div > p{
+    position: relative;
+    color: #94969a;
+    font-size: 0.9rem;
+    line-height: 100%;
+    
+}
+#footer > div > p >button{
+    position: absolute;
+    height: 35px;
+    width: 20%;
+    right: -4%;
+    border: none;
+    outline: none;
+    background-color: #e84f1e;
+    color: white;
+}
+#footer > div > p >input{
+    position: absolute;
+    background-color: #1e252c;
+    height: 30px;
+    width: 100%;
+}
+#footer > div > p >input::placeholder{
+    font-weight: bold;
+    padding-left: 5%;
+}
+
+@media screen and (max-width:700px) {
+    #footer{
+        padding: 0px;
+        text-align: center;
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+    #footer > div{
+        margin: auto;
+    }
+    #footer h2 {
+        margin-bottom: 2%;
+    }
+    #footer >div >p{
+        justify-content: center;
+    }
+}

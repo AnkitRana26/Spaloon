@@ -1,0 +1,46 @@
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 5%;
+    align-items: center;
+    box-shadow: 0 0 3px grey;
+    position: sticky;
+    z-index: 10001;
+    top: 0px;
+    background-color: white;
+
+}
+
+#navbar>img {
+    width: 140px;
+    height: 30px;
+}
+
+#navbar > ul {
+    display: flex;
+    gap: 30px;
+}
+
+#navbar > ul > li{
+    list-style: none;
+    cursor: pointer;
+}
+
+.drawerMaterialUI{
+    z-index: 10002 !important;
+}
+
+.drawerNavbar >p{
+    list-style: none;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 90%;
+    margin: 3% auto;
+}
+.drawerNavbar >img{
+   width: 60%;
+   display: block;
+   margin: 4% auto;
+}

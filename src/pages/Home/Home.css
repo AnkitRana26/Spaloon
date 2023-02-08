@@ -1,0 +1,223 @@
+#homeContainer {
+    background-color: #f4f4f4;
+}
+
+#homeTopImage {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://spaalon.com/images/Headerfirst.png');
+    height: 180px;
+    background-size: cover;
+    padding: 10% 0% 20% 0%;
+    position: relative;
+
+}
+
+#homeTopImage>h1,
+#homeTopImage>h2 {
+    color: white;
+}
+
+#homeTopImage>h1 {
+    font-size: 3rem;
+    line-height: 80%;
+}
+
+#searchSection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 60%;
+    padding: 3px 0%;
+    margin: auto;
+    border-radius: 8px;
+    background-color: white;
+}
+
+#searchSection>div {
+    background-color: white;
+    position: relative;
+    border-radius: 5px;
+}
+
+#searchSection>div>input {
+    width: 90%;
+    padding: 4%;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+}
+
+#searchSection>div>input::placeholder {
+    color: grey;
+    font-weight: bold;
+}
+
+#searchSection>div>button {
+    position: absolute;
+    top: 0px;
+    border-radius: 3px;
+    right: 1%;
+    height: 100%;
+    width: 30%;
+    border: none;
+    background-color: #e84f1e;
+    color: white;
+    font-weight: bold;
+    font-size: 1;
+}
+
+#searchSection>div:first-child>i {
+    position: absolute;
+    top: 30%;
+    right: 5%;
+}
+
+#searchSection>div:last-child>i {
+    position: absolute;
+    top: 30%;
+    right: 35%;
+}
+
+
+#servicesMainContainer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 80%;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    padding: 1%;
+    margin: auto;
+    position: absolute;
+    top: -50%;
+    left: 10%;
+    font-weight: bold;
+    box-shadow: 0 0 3px solid grey;
+}
+
+
+.servicesDiv>img {
+    width: 50px;
+    height: 50px;
+}
+
+#sliderContainer {
+    background-color: #f4f4f4;
+    width: 80%;
+    margin: 10% auto;
+    position: relative;
+}
+
+#sliderContainer {
+    line-height: 100%;
+}
+
+
+#slider2MainContainer {
+    background-color: white;
+    padding: 2%;
+    line-height: 100%;
+}
+
+#bannerSpaloonMainContainer {
+    padding: 5%;
+    background-color: white;
+}
+
+#bannerSpaloonContainer {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://spaalon.com/images/Headersecond.png');
+    height: 350px;
+    background-size: cover;
+    width: 80%;
+    margin: auto;
+    border-radius: 8px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    line-height: 100%;
+    color: white;
+    padding: 5%;
+}
+
+#bannerSpaloonContainer>div>button {
+    padding: 2% 8%;
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    background: #e84f1e;
+}
+
+#gridMain {
+    background-color: white;
+    padding-bottom: 5%;
+}
+
+#gridMain p {
+    font-size: 0.9rem;
+    display: flex;
+}
+
+@media screen and (max-width:800px) {
+    #searchSection {
+        background-color: transparent;
+    }
+
+    #searchSection {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    #servicesMainContainer {
+        position: static;
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #bannerSpaloonContainer {
+        /* text-align: center; */
+        font-size: 0.8rem;
+        height: 200px;
+    }
+
+    #homeTopImage>h1 {
+        font-size: 2rem;
+    }
+
+    #homeTopImage>h2 {
+        font-size: 1rem;
+    }
+
+    #searchSection {
+        width: 80%;
+    }
+
+    #sliderContainer {
+        width: 90%;
+        font-size: 0.8rem;
+    }
+
+    #searchSection>div>input::placeholder {
+        padding: 0;
+    }
+    #searchSection > div >button{
+        right: 0%;
+    }
+    #slider2MainContainer {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width:500px) {
+    #bannerSpaloonContainer {
+        font-size: 0.5rem;
+    }
+    #sliderContainer {
+        width: 90%;
+        font-size: 0.7rem;
+    }
+    #slider2MainContainer {
+        font-size: 0.8rem;
+    }
+}

@@ -1,0 +1,23 @@
+#sliderDiv {
+    margin: 5% 0%;
+    background-color: #f4f4f4;
+}
+
+.sliderContainer {
+    width: 70%;
+    height: 80%;
+    padding: 25px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 0 3px gray;
+    font-weight: bold;
+}
+
+.sliderContainer>img {
+    width: 140px;
+    height: 190px;
+    margin: auto;
+    display: block;
+}
+
+
