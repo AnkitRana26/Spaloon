@@ -6,7 +6,7 @@ const GridComponent = ({data}) => {
     <div id='gridMainContainer'>
         {
             data.map(ele=>{
-                return <div className='gridContainer'>
+                return <div key={`gridMain+${ele.id}`} className='gridContainer'>
 
                    <img src={ele.image_url}/>
                    <div>

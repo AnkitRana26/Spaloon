@@ -25,7 +25,7 @@ const Home = () => {
         //Shop Best Deal
         fetchData('https://spaalon.harij.in/api/shop/shopbestdeal')
         .then(res=>{
-            console.log(res);
+            // console.log(res);
             setShopBestDeal([...res.bestshop,...res.bestshop])
         })
         .catch(err=>console.log(err.message));

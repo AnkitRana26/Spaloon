@@ -26,7 +26,7 @@ export const Slider = ({data}) => {
         <Carousel partialVisible={true} responsive={responsive}>
             {
                 data.map(ele=>{
-                    return <div className="sliderContainer">
+                    return <div key={`slider${ele.id}`} className="sliderContainer">
                         <img src={ele.img} />
                         <p>{ele.content}</p>
                     </div>

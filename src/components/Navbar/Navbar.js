@@ -6,7 +6,7 @@ const Navbar = () => {
   const [showDrawer,setShowDrawer]= useState(false);
 
   window.addEventListener('resize',()=>{
-    console.log(window.innerWidth)
+    // console.log(window.innerWidth)
     if(window.innerWidth<800){
       setShowDrawer(true);
     }
