@@ -27,8 +27,8 @@ export const Slider2 = ({data}) => {
             {
                 data.map(ele=>{
                     return <div className="slider2Container">
-                        <img src={ele.img} />
-                        <p>{ele.content}</p>
+                        <img src={ele.image_url} />
+                        <p>{ele.shop_name}</p>
                     </div>
                 })
             }

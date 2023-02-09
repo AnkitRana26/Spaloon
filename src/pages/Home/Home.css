@@ -152,6 +152,26 @@
 #gridMain {
     background-color: white;
     padding-bottom: 5%;
+    text-align: left;
+}   
+
+
+#gridMain > h2,#gridMain > h3{
+    width: 80%;
+    margin: auto;
+    line-height: 110%;
+    
+}
+
+#gridMain > h2{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+#gridMain > h3{
+    color: grey;
+    margin-bottom: 2%;
+    font-weight: 500;
 }
 
 #gridMain p {
@@ -206,6 +226,22 @@
     }
     #slider2MainContainer {
         font-size: 0.9rem;
+    }
+    #gridMain > h2,#gridMain > h3{
+        width: 80%;
+        text-align: center;
+
+        
+    }
+    
+    #gridMain > h2{
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    
+    #gridMain > h3{
+        font-size: 0.9rem;
+        margin-bottom: 5%;
     }
 }
 

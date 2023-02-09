@@ -1,12 +1,40 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Home.css'
-import { gridContainerImages, popularSpaAndSalon, servicesData, trendingServices } from '../../data'
+import { servicesData, trendingServices } from '../../data'
 import { Slider } from '../../components/Slider/Slider';
 import { Slider2 } from '../../components/Slider2/Slider2';
 import GridComponent from '../../components/GridComponent/GridComponent';
 import Footer from '../../components/Footer/Footer';
+import { fetchData } from '../../utils/api';
 
 const Home = () => {
+    const [popularSpaAndSalon,setPopularSpaAndSalon] = useState([]);
+    const [shopBestDeal,setShopBestDeal] = useState([])
+
+
+    useEffect(()=>{
+
+        //Fetching Popular Shop
+        fetchData('https://spaalon.harij.in/api/shop/PopularShop')
+        .then(res=>{
+            // console.log(res);
+            setPopularSpaAndSalon([...res.popularShop,...res.popularShop])
+        })
+        .catch(err=>console.log(err.message));
+        
+        //Shop Best Deal
+        fetchData('https://spaalon.harij.in/api/shop/shopbestdeal')
+        .then(res=>{
+            console.log(res);
+            setShopBestDeal([...res.bestshop,...res.bestshop])
+        })
+        .catch(err=>console.log(err.message));
+
+    },[])
+
+
+
+
     return (
         <div id='homeContainer'>
             <div id='homeTopImage'>
@@ -56,7 +84,9 @@ const Home = () => {
                 </div>
             </div>
             <div id='gridMain'>
-                <GridComponent data={gridContainerImages}/>
+                <h2>Best Deals</h2>
+                <h3>Come experience the best haircut and color services </h3>
+                <GridComponent data={shopBestDeal}/>
             </div>
             <Footer/>
         </div >
